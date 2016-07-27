@@ -1,1 +1,5 @@
 alias apt-get="sudo apt-get"
+alias sshr="ssh -l root"
+alias ufw="sudo ufw"
+alias sc="sudo service"
+alias simplehttp="python -m SimpleHTTPServer"

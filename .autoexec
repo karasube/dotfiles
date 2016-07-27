@@ -1,2 +1,4 @@
 source ~/.dotfiles/.shell_aliases
 source ~/.dotfiles/.extra_paths
+source ~/.dotfiles/.nvm
+source ~/.dotfiles/.gvm
