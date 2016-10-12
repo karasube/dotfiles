@@ -1,2 +1,22 @@
 function gi() { curl -L -s https://www.gitignore.io/api/$@ ;}
+
 function cll() { cd $1; ll; }
+
+function up {
+  if [[ "$#" < 1 ]] ; then
+    cd ..
+  else
+    CDSTR=""
+    for i in {1..$1} ; do
+      CDSTR="../$CDSTR"
+    done
+    cd $CDSTR
+  fi
+}
+
+function psgrep() { ps axuf | grep -v grep | grep "$@" -i --color=auto; }
+function search() { find . -iname "*$@*" | less; }
+
+function cdproject() {
+  cd `find $PROJECTS_DIR -type d -name "$@"`
+}

@@ -1,7 +1,16 @@
-source ~/.dotfiles/.env
-source ~/.dotfiles/.functions
-source ~/.dotfiles/.ssh_shell_aliases
-source ~/.dotfiles/.shell_aliases
-source ~/.dotfiles/.extra_paths
-source ~/.dotfiles/.nvm
-source ~/.dotfiles/.gvm
+
+#!/bin/bash
+files=(
+    env
+    functions
+    ssh_shell_aliases
+    shell_aliases
+    extra_paths
+    nvm
+    gvm
+)
+
+for file in "${files[@]}"
+do
+    source ~/.dotfiles/.$file;
+done

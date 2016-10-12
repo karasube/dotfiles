@@ -1,0 +1,3 @@
+if [ -d "$HOME/.rack/bash_autocomplete" ]
+    source $HOME/.rack/bash_autocomplete
+fi
