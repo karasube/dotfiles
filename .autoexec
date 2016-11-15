@@ -7,6 +7,11 @@ files=(
     extra_paths
     nvm
     gvm
+    rvm
+    dvm
+    adb
+    urbantz/.shell_aliases
+    urbantz/.env
 )
 
 for file in "${files[@]}"

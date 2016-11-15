@@ -20,3 +20,11 @@ function search() { find . -iname "*$@*" | less; }
 function cdproject() {
   cd `find $PROJECTS_DIR -type d -name "$@"`
 }
+
+function vidots() {
+  vim ~/.dotfiles/$@
+}
+
+function local-redirect-port() {
+  sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport $2 -j REDIRECT --to-port $1
+}
