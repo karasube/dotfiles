@@ -9,9 +9,13 @@ files=(
     gvm
     rvm
     dvm
+    #pyenv
     adb
+    togetair/.shell_aliases
     urbantz/.shell_aliases
     urbantz/.env
+    bsit/.env
+    bsit/.shell_aliases
 )
 
 for file in "${files[@]}"
